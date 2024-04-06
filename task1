@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Members</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .member {
+        width: 300px;
+        background-color: #f7f7f7; /* Light grey background color */
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .member:hover {
+        transform: translateY(-5px);
+    }
+
+    .member img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .member-info {
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .member-info h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .member-info p {
+        margin: 10px 0;
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    /* Background colors for different roles */
+    .member.ceo {
+        background-color: #ffd700; /* Gold */
+    }
+
+    .member.cto {
+        background-color: #87ceeb; /* Sky blue */
+    }
+
+    .member.software-engineer {
+        background-color: #ffa07a; /* Light salmon */
+    }
+
+    .member.web-developer {
+        background-color: #98fb98; /* Pale green */
+    }
+
+    .member.data-scientist {
+        background-color: #dda0dd; /* Plum */
+    }
+
+    @media screen and (max-width: 768px) {
+        .member {
+            width: calc(50% - 40px);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .member {
+            width: calc(100% - 40px);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>VeriTech Software IT Solutions</h1>
+    <p>Welcome to our company! We are dedicated to delivering top-notch solutions.</p>
+</div>
+<div class="container">
+    <div class="member ceo">
+        <img src="https://builtprefab.com/wp-content/uploads/2019/01/cropped-blank-profile-picture-973460_960_720-300x300.png" alt="John Doe">
+        <div class="member-info">
+            <h3 style="color: #fff;">John Doe</h3>
+            <p style="color: #fff;">CEO</p>
+            <p style="color: #fff;">We call him "THE BOSS".</p>
+        </div>
+    </div>
+    <div class="member cto">
+        <img src="https://builtprefab.com/wp-content/uploads/2019/01/cropped-blank-profile-picture-973460_960_720-300x300.png" alt="Jane Smith">
+        <div class="member-info">
+            <h3 style="color: #fff;">Jane Smith</h3>
+            <p style="color: #fff;">CTO</p>
+            <p style="color: #fff;">The Head.</p>
+        </div>
+    </div>
+    <div class="member software-engineer">
+        <img src="https://builtprefab.com/wp-content/uploads/2019/01/cropped-blank-profile-picture-973460_960_720-300x300.png" alt="Mike Johnson">
+        <div class="member-info">
+            <h3 style="color: #fff;">Mike Johnson</h3>
+            <p style="color: #fff;">Software Engineer</p>
+            <p style="color: #fff;">The most creative and innovative.</p>
+        </div>
+    </div>
+    <div class="member web-developer">
+        <img src="https://builtprefab.com/wp-content/uploads/2019/01/cropped-blank-profile-picture-973460_960_720-300x300.png" alt="Emily Brown">
+        <div class="member-info">
+            <h3 style="color: #fff;">Emily Brown</h3>
+            <p style="color: #fff;">Web Developer</p>
+            <p style="color: #fff;">The aggressive Web Techie.</p>
+        </div>
+    </div>
+    <div class="member data-scientist">
+        <img src="https://builtprefab.com/wp-content/uploads/2019/01/cropped-blank-profile-picture-973460_960_720-300x300.png" alt="David Lee">
+        <div class="member-info">
+            <h3 style="color: #fff;">David Lee</h3>
+            <p style="color: #fff;">Data Scientist</p>
+            <p style="color: #fff;">The great Data manipulator.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
